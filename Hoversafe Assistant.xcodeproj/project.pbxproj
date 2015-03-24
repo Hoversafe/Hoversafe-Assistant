@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44FB3231AC1A35C002709D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3221AC1A35C002709D8 /* main.m */; };
+		F44FB3261AC1A35C002709D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3251AC1A35C002709D8 /* AppDelegate.m */; };
+		F44FB3291AC1A35C002709D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3281AC1A35C002709D8 /* ViewController.m */; };
+		F44FB32E1AC1A35D002709D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44FB32D1AC1A35D002709D8 /* Images.xcassets */; };
+		F44FB3311AC1A35D002709D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44FB32F1AC1A35D002709D8 /* LaunchScreen.xib */; };
+		F44FB33D1AC1A35D002709D8 /* Hoversafe_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB33C1AC1A35D002709D8 /* Hoversafe_AssistantTests.m */; };
+		F44FB3481AC1A3BB002709D8 /* BoundaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3471AC1A3BB002709D8 /* BoundaryView.m */; };
+		F44FB34A1AC1A419002709D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44FB3491AC1A419002709D8 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44FB3371AC1A35D002709D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44FB3151AC1A35C002709D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44FB31C1AC1A35C002709D8;
+			remoteInfo = "Hoversafe Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F44FB31D1AC1A35C002709D8 /* Hoversafe Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoversafe Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44FB3211AC1A35C002709D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44FB3221AC1A35C002709D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F44FB3241AC1A35C002709D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F44FB3251AC1A35C002709D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F44FB3271AC1A35C002709D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F44FB3281AC1A35C002709D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F44FB32D1AC1A35D002709D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F44FB3301AC1A35D002709D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F44FB3361AC1A35D002709D8 /* Hoversafe AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hoversafe AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44FB33B1AC1A35D002709D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44FB33C1AC1A35D002709D8 /* Hoversafe_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hoversafe_AssistantTests.m; sourceTree = "<group>"; };
+		F44FB3461AC1A3BB002709D8 /* BoundaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundaryView.h; sourceTree = "<group>"; };
+		F44FB3471AC1A3BB002709D8 /* BoundaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundaryView.m; sourceTree = "<group>"; };
+		F44FB3491AC1A419002709D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44FB31A1AC1A35C002709D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44FB3331AC1A35D002709D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44FB3141AC1A35C002709D8 = {
+			isa = PBXGroup;
+			children = (
+				F44FB31F1AC1A35C002709D8 /* Hoversafe Assistant */,
+				F44FB3391AC1A35D002709D8 /* Hoversafe AssistantTests */,
+				F44FB31E1AC1A35C002709D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44FB31E1AC1A35C002709D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB31D1AC1A35C002709D8 /* Hoversafe Assistant.app */,
+				F44FB3361AC1A35D002709D8 /* Hoversafe AssistantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44FB31F1AC1A35C002709D8 /* Hoversafe Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB3461AC1A3BB002709D8 /* BoundaryView.h */,
+				F44FB3471AC1A3BB002709D8 /* BoundaryView.m */,
+				F44FB3271AC1A35C002709D8 /* ViewController.h */,
+				F44FB3281AC1A35C002709D8 /* ViewController.m */,
+				F44FB3491AC1A419002709D8 /* Main.storyboard */,
+				F44FB3201AC1A35C002709D8 /* Supporting Files */,
+			);
+			path = "Hoversafe Assistant";
+			sourceTree = "<group>";
+		};
+		F44FB3201AC1A35C002709D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB3241AC1A35C002709D8 /* AppDelegate.h */,
+				F44FB3251AC1A35C002709D8 /* AppDelegate.m */,
+				F44FB32D1AC1A35D002709D8 /* Images.xcassets */,
+				F44FB32F1AC1A35D002709D8 /* LaunchScreen.xib */,
+				F44FB3211AC1A35C002709D8 /* Info.plist */,
+				F44FB3221AC1A35C002709D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44FB3391AC1A35D002709D8 /* Hoversafe AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB33C1AC1A35D002709D8 /* Hoversafe_AssistantTests.m */,
+				F44FB33A1AC1A35D002709D8 /* Supporting Files */,
+			);
+			path = "Hoversafe AssistantTests";
+			sourceTree = "<group>";
+		};
+		F44FB33A1AC1A35D002709D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB33B1AC1A35D002709D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44FB31C1AC1A35C002709D8 /* Hoversafe Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44FB3401AC1A35D002709D8 /* Build configuration list for PBXNativeTarget "Hoversafe Assistant" */;
+			buildPhases = (
+				F44FB3191AC1A35C002709D8 /* Sources */,
+				F44FB31A1AC1A35C002709D8 /* Frameworks */,
+				F44FB31B1AC1A35C002709D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hoversafe Assistant";
+			productName = "Hoversafe Assistant";
+			productReference = F44FB31D1AC1A35C002709D8 /* Hoversafe Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44FB3351AC1A35D002709D8 /* Hoversafe AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44FB3431AC1A35D002709D8 /* Build configuration list for PBXNativeTarget "Hoversafe AssistantTests" */;
+			buildPhases = (
+				F44FB3321AC1A35D002709D8 /* Sources */,
+				F44FB3331AC1A35D002709D8 /* Frameworks */,
+				F44FB3341AC1A35D002709D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44FB3381AC1A35D002709D8 /* PBXTargetDependency */,
+			);
+			name = "Hoversafe AssistantTests";
+			productName = "Hoversafe AssistantTests";
+			productReference = F44FB3361AC1A35D002709D8 /* Hoversafe AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44FB3151AC1A35C002709D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Autonomous Technologies";
+				TargetAttributes = {
+					F44FB31C1AC1A35C002709D8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F44FB3351AC1A35D002709D8 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F44FB31C1AC1A35C002709D8;
+					};
+				};
+			};
+			buildConfigurationList = F44FB3181AC1A35C002709D8 /* Build configuration list for PBXProject "Hoversafe Assistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44FB3141AC1A35C002709D8;
+			productRefGroup = F44FB31E1AC1A35C002709D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44FB31C1AC1A35C002709D8 /* Hoversafe Assistant */,
+				F44FB3351AC1A35D002709D8 /* Hoversafe AssistantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44FB31B1AC1A35C002709D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44FB3311AC1A35D002709D8 /* LaunchScreen.xib in Resources */,
+				F44FB32E1AC1A35D002709D8 /* Images.xcassets in Resources */,
+				F44FB34A1AC1A419002709D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44FB3341AC1A35D002709D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44FB3191AC1A35C002709D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44FB3481AC1A3BB002709D8 /* BoundaryView.m in Sources */,
+				F44FB3291AC1A35C002709D8 /* ViewController.m in Sources */,
+				F44FB3261AC1A35C002709D8 /* AppDelegate.m in Sources */,
+				F44FB3231AC1A35C002709D8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44FB3321AC1A35D002709D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44FB33D1AC1A35D002709D8 /* Hoversafe_AssistantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44FB3381AC1A35D002709D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44FB31C1AC1A35C002709D8 /* Hoversafe Assistant */;
+			targetProxy = F44FB3371AC1A35D002709D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F44FB32F1AC1A35D002709D8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44FB3301AC1A35D002709D8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F44FB33E1AC1A35D002709D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F44FB33F1AC1A35D002709D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F44FB3411AC1A35D002709D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hoversafe Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F44FB3421AC1A35D002709D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hoversafe Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F44FB3441AC1A35D002709D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hoversafe AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hoversafe Assistant.app/Hoversafe Assistant";
+			};
+			name = Debug;
+		};
+		F44FB3451AC1A35D002709D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hoversafe AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hoversafe Assistant.app/Hoversafe Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44FB3181AC1A35C002709D8 /* Build configuration list for PBXProject "Hoversafe Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44FB33E1AC1A35D002709D8 /* Debug */,
+				F44FB33F1AC1A35D002709D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44FB3401AC1A35D002709D8 /* Build configuration list for PBXNativeTarget "Hoversafe Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44FB3411AC1A35D002709D8 /* Debug */,
+				F44FB3421AC1A35D002709D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F44FB3431AC1A35D002709D8 /* Build configuration list for PBXNativeTarget "Hoversafe AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44FB3441AC1A35D002709D8 /* Debug */,
+				F44FB3451AC1A35D002709D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44FB3151AC1A35C002709D8 /* Project object */;
+}
