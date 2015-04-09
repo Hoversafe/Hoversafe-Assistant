@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>709133CD-45CE-4A07-A2B6-EDEC604250EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hoversafe Assistant</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8E20D73032A61A8CA678A45D048BC5154CF39B4</key>
+		<string>https://bitbucket.org/hoversafe/assistant-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hoversafe Assistant.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8E20D73032A61A8CA678A45D048BC5154CF39B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hoversafe/assistant-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8E20D73032A61A8CA678A45D048BC5154CF39B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8E20D73032A61A8CA678A45D048BC5154CF39B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hoversafe%20Assistant</string>
+		</dict>
+	</array>
+</dict>
+</plist>

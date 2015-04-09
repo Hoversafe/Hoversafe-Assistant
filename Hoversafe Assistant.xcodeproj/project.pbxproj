@@ -412,6 +412,7 @@
 				F44FB3421AC1A35D002709D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44FB3431AC1A35D002709D8 /* Build configuration list for PBXNativeTarget "Hoversafe AssistantTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				F44FB3451AC1A35D002709D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
