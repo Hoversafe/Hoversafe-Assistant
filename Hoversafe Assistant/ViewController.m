@@ -22,7 +22,7 @@ NSString *testString;
     
     // Set orb control boundaries
     _minPoint.x = ((super.view.center.x * 2) - 15) - super.view.center.x * 0.5;
-    _minPoint.y = ((super.view.center.y * 2) - 105) - super.view.center.y * 0.4;
+    _minPoint.y = ((super.view.center.y * 2) - 85) - super.view.center.y * 0.4;
     _maxPoint.x = _minPoint.x + (super.view.center.x * 0.5);
     _maxPoint.y = _minPoint.y + (super.view.center.y * 0.4);
     

@@ -18,7 +18,7 @@
     
     CGContextSetLineWidth(context, 2.0);
     CGContextSetStrokeColorWithColor(context, [UIColor clearColor].CGColor);
-    CGRect rectangle = CGRectMake(((super.center.x * 2) - 15) - super.center.x * 0.5, ((super.center.y * 2) - 105) - super.center.y * 0.4, super.center.x * 0.5, super.center.y * 0.4);
+    CGRect rectangle = CGRectMake(((super.center.x * 2) - 15) - super.center.x * 0.5, ((super.center.y * 2) - 85) - super.center.y * 0.4, super.center.x * 0.5, super.center.y * 0.4);
     CGContextAddRect(context, rectangle);
     CGContextStrokePath(context);
     CGContextSetFillColorWithColor(context, boundaryBackgroundColor.CGColor);

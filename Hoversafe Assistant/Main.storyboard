@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-vp-9Jc">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="-2" y="158" width="604" height="339"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ggR-vp-9Jc" secondAttribute="height" multiplier="16:9" id="bMA-G4-Q7c"/>
+                                </constraints>
                             </webView>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-Ce-eU3" customClass="BoundaryView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -28,24 +33,23 @@
                                 <rect key="frame" x="265" y="265" width="70" height="70"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoversafe" translatesAutoresizingMaskIntoConstraints="NO" id="M3p-PL-UXM">
-                                <rect key="frame" x="15" y="433" width="124" height="62"/>
+                                <rect key="frame" x="13" y="420" width="124" height="62"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="0D1-g7-2On"/>
-                                    <constraint firstAttribute="height" constant="62" id="ukB-Cl-kNr"/>
+                                    <constraint firstAttribute="height" constant="62" id="AAk-gZ-5Gy"/>
+                                    <constraint firstAttribute="width" constant="124" id="YWx-U6-kTK"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="tHV-Ce-eU3" firstAttribute="leading" secondItem="M3p-PL-UXM" secondAttribute="leading" constant="-15" id="Wbc-uQ-jVo"/>
+                            <constraint firstAttribute="centerY" secondItem="ggR-vp-9Jc" secondAttribute="centerY" constant="-27.5" id="8US-ot-Nrb"/>
+                            <constraint firstItem="M3p-PL-UXM" firstAttribute="bottom" secondItem="ggR-vp-9Jc" secondAttribute="bottom" constant="-15" id="T0P-ul-rFp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ggR-vp-9Jc" secondAttribute="trailing" constant="-18" id="TGG-LS-GLe"/>
+                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="leading" secondItem="M3p-PL-UXM" secondAttribute="leading" constant="-15" id="XBK-ai-YtN"/>
                             <constraint firstItem="tHV-Ce-eU3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="emV-8u-Utx"/>
                             <constraint firstItem="tHV-Ce-eU3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="h6I-33-nso"/>
-                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="trailing" secondItem="tHV-Ce-eU3" secondAttribute="trailing" id="hV8-Qw-gSS"/>
-                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="top" secondItem="tHV-Ce-eU3" secondAttribute="top" id="kzT-gi-Zu5"/>
                             <constraint firstAttribute="trailing" secondItem="tHV-Ce-eU3" secondAttribute="trailing" id="osD-JJ-Y8q"/>
                             <constraint firstItem="tHV-Ce-eU3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p4q-yW-FEL"/>
-                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="leading" secondItem="tHV-Ce-eU3" secondAttribute="leading" id="th4-nH-yTp"/>
-                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="y3D-Da-An7"/>
-                            <constraint firstItem="tHV-Ce-eU3" firstAttribute="bottom" secondItem="M3p-PL-UXM" secondAttribute="bottom" constant="105" id="zJs-dx-bmP"/>
+                            <constraint firstItem="ggR-vp-9Jc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-18" id="tGt-DF-bef"/>
                         </constraints>
                     </view>
                     <connections>
