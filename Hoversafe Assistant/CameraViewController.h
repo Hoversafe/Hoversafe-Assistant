@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  CameraViewController.h
 //  Hoversafe Assistant
 //
-//  Created by Simon Anthony on 24/03/2015.
+//  Created by Simon Anthony on 09/04/2015.
 //  Copyright (c) 2015 Autonomous Technologies. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 NSInputStream *inputStream;
 NSOutputStream *outputStream;
 
-@interface ViewController : UIViewController <NSStreamDelegate>
+@interface CameraViewController : UIViewController
 
 @property CGPoint minPoint;
 @property CGPoint maxPoint;
@@ -19,5 +19,8 @@ NSOutputStream *outputStream;
 
 @property (weak, nonatomic) IBOutlet UIImageView *orb;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIView *boundaryView;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 
 @end

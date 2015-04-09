@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4002C111AD69B8100B33141 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4002C101AD69B8100B33141 /* CameraViewController.m */; };
+		F4002C141AD69BDD00B33141 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4002C131AD69BDD00B33141 /* MenuViewController.m */; };
 		F44FB3231AC1A35C002709D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3221AC1A35C002709D8 /* main.m */; };
 		F44FB3261AC1A35C002709D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3251AC1A35C002709D8 /* AppDelegate.m */; };
-		F44FB3291AC1A35C002709D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3281AC1A35C002709D8 /* ViewController.m */; };
 		F44FB32E1AC1A35D002709D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44FB32D1AC1A35D002709D8 /* Images.xcassets */; };
 		F44FB3311AC1A35D002709D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44FB32F1AC1A35D002709D8 /* LaunchScreen.xib */; };
 		F44FB33D1AC1A35D002709D8 /* Hoversafe_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB33C1AC1A35D002709D8 /* Hoversafe_AssistantTests.m */; };
-		F44FB3481AC1A3BB002709D8 /* BoundaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F44FB3471AC1A3BB002709D8 /* BoundaryView.m */; };
 		F44FB34A1AC1A419002709D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44FB3491AC1A419002709D8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -28,20 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4002C0F1AD69B8100B33141 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		F4002C101AD69B8100B33141 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		F4002C121AD69BDD00B33141 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		F4002C131AD69BDD00B33141 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		F44FB31D1AC1A35C002709D8 /* Hoversafe Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoversafe Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44FB3211AC1A35C002709D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44FB3221AC1A35C002709D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F44FB3241AC1A35C002709D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F44FB3251AC1A35C002709D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F44FB3271AC1A35C002709D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F44FB3281AC1A35C002709D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F44FB32D1AC1A35D002709D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F44FB3301AC1A35D002709D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F44FB3361AC1A35D002709D8 /* Hoversafe AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hoversafe AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44FB33B1AC1A35D002709D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44FB33C1AC1A35D002709D8 /* Hoversafe_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hoversafe_AssistantTests.m; sourceTree = "<group>"; };
-		F44FB3461AC1A3BB002709D8 /* BoundaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundaryView.h; sourceTree = "<group>"; };
-		F44FB3471AC1A3BB002709D8 /* BoundaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundaryView.m; sourceTree = "<group>"; };
 		F44FB3491AC1A419002709D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,10 +84,10 @@
 		F44FB31F1AC1A35C002709D8 /* Hoversafe Assistant */ = {
 			isa = PBXGroup;
 			children = (
-				F44FB3461AC1A3BB002709D8 /* BoundaryView.h */,
-				F44FB3471AC1A3BB002709D8 /* BoundaryView.m */,
-				F44FB3271AC1A35C002709D8 /* ViewController.h */,
-				F44FB3281AC1A35C002709D8 /* ViewController.m */,
+				F4002C0F1AD69B8100B33141 /* CameraViewController.h */,
+				F4002C101AD69B8100B33141 /* CameraViewController.m */,
+				F4002C121AD69BDD00B33141 /* MenuViewController.h */,
+				F4002C131AD69BDD00B33141 /* MenuViewController.m */,
 				F44FB3491AC1A419002709D8 /* Main.storyboard */,
 				F44FB3201AC1A35C002709D8 /* Supporting Files */,
 			);
@@ -224,8 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44FB3481AC1A3BB002709D8 /* BoundaryView.m in Sources */,
-				F44FB3291AC1A35C002709D8 /* ViewController.m in Sources */,
+				F4002C111AD69B8100B33141 /* CameraViewController.m in Sources */,
+				F4002C141AD69BDD00B33141 /* MenuViewController.m in Sources */,
 				F44FB3261AC1A35C002709D8 /* AppDelegate.m in Sources */,
 				F44FB3231AC1A35C002709D8 /* main.m in Sources */,
 			);

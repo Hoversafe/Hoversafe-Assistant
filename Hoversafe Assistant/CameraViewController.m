@@ -1,34 +1,32 @@
 //
-//  ViewController.m
+//  CameraViewController.m
 //  Hoversafe Assistant
 //
-//  Created by Simon Anthony on 24/03/2015.
+//  Created by Simon Anthony on 09/04/2015.
 //  Copyright (c) 2015 Autonomous Technologies. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CameraViewController.h"
 
 NSString *testString;
 
-@interface ViewController ()
+@interface CameraViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CameraViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.webView.hidden = true;
     
-    // Set orb control boundaries
-    _minPoint.x = ((super.view.center.x * 2) - 15) - super.view.center.x * 0.5;
-    _minPoint.y = ((super.view.center.y * 2) - 85) - super.view.center.y * 0.4;
-    _maxPoint.x = _minPoint.x + (super.view.center.x * 0.5);
-    _maxPoint.y = _minPoint.y + (super.view.center.y * 0.4);
+    self.title = @"Camera Controller";
     
-    // Set orb center point within boundaries
-    _orbCenter.x = _minPoint.x + ((_maxPoint.x - _minPoint.x) / 2);
-    _orbCenter.y = _minPoint.y + ((_maxPoint.y - _minPoint.y) / 2);
+    self.navigationController.navigationBar.barTintColor = [UIColor darkGrayColor];
+    self.navigationController.navigationBar.translucent = NO;
+    
+    _lblStatus.text = @"Loading application..";
     
     // Create UIPanGestureRecognizer and add to orb view
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveOrb:)];
@@ -46,9 +44,27 @@ NSString *testString;
     [self.webView loadRequest:request];
 }
 
--(void)viewDidAppear:(BOOL)animated {
+-(void)viewDidAppear:(BOOL)animated
+{
+    // Set orb control boundaries
+    _minPoint = _boundaryView.frame.origin;
+    _maxPoint.x = _minPoint.x + _boundaryView.frame.size.width;
+    _maxPoint.y = _minPoint.y + _boundaryView.frame.size.height;
+    
+    // Set orb center point within boundaries
+    _orbCenter = _boundaryView.center;
+    
     // Reset orb to center point
     self.orb.center = _orbCenter;
+    
+    self.webView.hidden = false;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    [self.webView reload];
+    NSLog(@"Reloading webview..");
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -93,10 +109,9 @@ NSString *testString;
     [UIView animateWithDuration:0.2
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^(void)
-     {
-         self.orb.center = _orbCenter;
-     }
+                     animations:^(void) {
+                         self.orb.center = _orbCenter;
+                     }
                      completion:nil];
     
     // Convert orb center point to pulse length and send to server
@@ -155,6 +170,7 @@ NSString *testString;
     {
         case NSStreamEventOpenCompleted:
             NSLog(@"Stream Opened");
+            _lblStatus.text = @"Status: Connected";
             break;
         case NSStreamEventHasBytesAvailable:
             if(theStream == inputStream)
@@ -178,6 +194,7 @@ NSString *testString;
             break;
         case NSStreamEventErrorOccurred:
             NSLog(@"Can not connect to the host");
+            _lblStatus.text = @"Status: Disconnected";
             break;
         case NSStreamEventEndEncountered:
             [theStream close];
