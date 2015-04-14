@@ -18,8 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    [[UIApplication sharedApplication] setStatusBarHidden: false];
-    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarHidden: true];
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleDefault];
     
     return YES;
 }

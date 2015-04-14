@@ -42,6 +42,21 @@ NSString *testString;
     // Load camera webpage
     NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString:@"http://192.168.1.50/index.html"]];
     [self.webView loadRequest:request];
+    
+    // Setup MapView andd LocationManager
+    _mapView.delegate = self;
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    #ifdef __IPHONE_8_0
+    if (IS_OS_8_OR_LATER) {
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    #endif
+    [self.locationManager startUpdatingLocation];
+    _mapView.showsUserLocation = YES;
+    [_mapView setMapType:MKMapTypeStandard];
+    [_mapView setZoomEnabled: YES];
+    [_mapView setScrollEnabled: YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -58,6 +73,18 @@ NSString *testString;
     self.orb.center = _orbCenter;
     
     self.webView.hidden = false;
+    
+    // Get current location and create MapView region
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    NSLog(@"%@", [self deviceLocation]);
+    MKCoordinateRegion region = { { 0.0, 0.0, }, { 0.0, 0.0 } };
+    region.center.latitude = self.locationManager.location.coordinate.latitude;
+    region.center.longitude = self.locationManager.location.coordinate.longitude;
+    region.span.longitudeDelta = 0.005f;
+    region.span.latitudeDelta = 0.005f;
+    [_mapView setRegion:region animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +93,28 @@ NSString *testString;
     [self.webView reload];
     NSLog(@"Reloading webview..");
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// MAP FUNCTIONS ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+}
+- (NSString *)deviceLocation {
+    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+}
+- (NSString *)deviceLat {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
+}
+- (NSString *)deviceLon {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+}
+- (NSString *)deviceAlt {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.altitude];
+}
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GESTURE CONTROL //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -170,7 +219,8 @@ NSString *testString;
     {
         case NSStreamEventOpenCompleted:
             NSLog(@"Stream Opened");
-            _lblStatus.text = @"Status: Connected";
+            _lblStatus.text = @"Connected";
+            _lblStatus.textColor = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0];
             break;
         case NSStreamEventHasBytesAvailable:
             if(theStream == inputStream)
@@ -194,7 +244,8 @@ NSString *testString;
             break;
         case NSStreamEventErrorOccurred:
             NSLog(@"Can not connect to the host");
-            _lblStatus.text = @"Status: Disconnected";
+            _lblStatus.text = @"Disconnected";
+            _lblStatus.textColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
             break;
         case NSStreamEventEndEncountered:
             [theStream close];
@@ -214,5 +265,13 @@ NSString *testString;
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+
+- (IBAction)toggleUI {
+    _mapView.hidden = !_mapView.hidden;
+    _orb.hidden = !_orb.hidden;
+    _boundaryView.hidden = !_boundaryView.hidden;
+    _lblCameraControl.hidden = !_lblCameraControl.hidden;
+    _logo.hidden = !_logo.hidden;
+}
 
 @end
