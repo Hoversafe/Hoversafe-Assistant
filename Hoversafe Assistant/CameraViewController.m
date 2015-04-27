@@ -145,7 +145,7 @@ NSString *testString;
         CGPoint finalPoint = self.orb.center;
         
         finalPoint.x = [self map:finalPoint.x fromMinimum:_minPoint.x fromMaximum:_maxPoint.x toMinimum:410 toMaximum:820];
-        finalPoint.y = [self map:finalPoint.y fromMinimum:_minPoint.y fromMaximum:_maxPoint.y toMinimum:410 toMaximum:820];
+        finalPoint.y = [self map:finalPoint.y fromMinimum:_minPoint.y fromMaximum:_maxPoint.y toMinimum:820 toMaximum:410];
         
         NSLog(@"%.2f, %.2f", finalPoint.x, finalPoint.y);
         [self sendData:finalPoint];
@@ -166,7 +166,7 @@ NSString *testString;
     // Convert orb center point to pulse length and send to server
     CGPoint finalPoint = self.orb.center;                                                                                                   // THIS
     finalPoint.x = [self map:finalPoint.x fromMinimum:_minPoint.x fromMaximum:_maxPoint.x toMinimum:410 toMaximum:820];                     // CAN
-    finalPoint.y = [self map:finalPoint.y fromMinimum:_minPoint.y fromMaximum:_maxPoint.y toMinimum:410 toMaximum:820];                     // BE
+    finalPoint.y = [self map:finalPoint.y fromMinimum:_minPoint.y fromMaximum:_maxPoint.y toMinimum:820 toMaximum:410];                     // BE
     NSLog(@"%.2f, %.2f", finalPoint.x, finalPoint.y);                                                                                       // PRE
     [self sendData:finalPoint];                                                                                                             // DEFINED
 }
