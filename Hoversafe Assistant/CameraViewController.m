@@ -20,13 +20,11 @@ NSString *testString;
 {
     [super viewDidLoad];
     self.webView.hidden = true;
+    self.mapView.hidden = true;
     
     self.title = @"Camera Controller";
     
-    self.navigationController.navigationBar.barTintColor = [UIColor darkGrayColor];
-    self.navigationController.navigationBar.translucent = NO;
-    
-    _lblStatus.text = @"Loading application..";
+    _lblStatus.text = @"Loading gimbal stream";
     
     // Create UIPanGestureRecognizer and add to orb view
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveOrb:)];
@@ -149,6 +147,22 @@ NSString *testString;
         
         NSLog(@"%.2f, %.2f", finalPoint.x, finalPoint.y);
         [self sendData:finalPoint];
+        
+//        // On tap, reset orb to center position with slide animation
+//        [UIView animateWithDuration:0.2
+//                              delay:0.0
+//                            options:UIViewAnimationOptionCurveEaseInOut
+//                         animations:^(void) {
+//                             self.orb.center = _orbCenter;
+//                         }
+//                         completion:nil];
+//        
+//        // Convert orb center point to pulse length and send to server
+//        CGPoint finalPoint = self.orb.center;                                                                                                   // THIS
+//        finalPoint.x = [self map:finalPoint.x fromMinimum:_minPoint.x fromMaximum:_maxPoint.x toMinimum:410 toMaximum:820];                     // CAN
+//        finalPoint.y = [self map:finalPoint.y fromMinimum:_minPoint.y fromMaximum:_maxPoint.y toMinimum:820 toMaximum:410];                     // BE
+//        NSLog(@"%.2f, %.2f", finalPoint.x, finalPoint.y);                                                                                       // PRE
+//        [self sendData:finalPoint];                                                                                                             // DEFINED
     }
 }
 
@@ -190,9 +204,10 @@ NSString *testString;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// INIT NETWORK COMMUNICATION ///////////////////////////////////////////////////////////////////////////////////////////
+// INIT NETWORK STREAM //////////////////////////////////////////////////////////////////////////////////////////////////
 
-- (void)initNetworkCommunication                                                                                                            // COMMENT THIS SECTION
+// Open network stream for gimbal control
+- (void)initNetworkCommunication
 {
     CFReadStreamRef readStream;
     CFWriteStreamRef writeStream;
@@ -213,7 +228,8 @@ NSString *testString;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // STREAM EVENTS ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent                                                                 // COMMENT THIS SECTION
+// Stream event handler
+- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent
 {
     switch (streamEvent)
     {
@@ -268,10 +284,10 @@ NSString *testString;
 
 - (IBAction)toggleUI {
     _mapView.hidden = !_mapView.hidden;
-    _orb.hidden = !_orb.hidden;
-    _boundaryView.hidden = !_boundaryView.hidden;
-    _lblCameraControl.hidden = !_lblCameraControl.hidden;
-    _logo.hidden = !_logo.hidden;
+    //_orb.hidden = !_orb.hidden;
+    //_boundaryView.hidden = !_boundaryView.hidden;
+    //_lblCameraControl.hidden = !_lblCameraControl.hidden;
+    //_logo.hidden = !_logo.hidden;
 }
 
 @end
